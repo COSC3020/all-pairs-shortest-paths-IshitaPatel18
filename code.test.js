@@ -3,6 +3,9 @@ const assert = require('assert');
 
 eval(fs.readFileSync('code.js')+'');
 
+// All of the answers to the graphs I doubled checked by solving
+// them by hand and then using my Dijkstra's algorithm!
+
 let graph1 = [
   [0, 1, 0, 0],
   [0, 0, 6, 0],
@@ -32,15 +35,17 @@ let answers2 = [
 ];
 
 let graph3 = [
-  [0, 0, 0],
-  [0, 0, 0],
-  [0, 0, 0]
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]
 ];
 
 let answers3 = [
-  [0, Infinity, Infinity],
-  [Infinity, 0, Infinity],
-  [Infinity, Infinity, 0]
+  [0, Infinity, Infinity, Infinity],
+  [Infinity, 0, Infinity, Infinity],
+  [Infinity, Infinity, 0, Infinity],
+  [Infinity, Infinity, Infinity, 0]
 ]
 
 let graph4 = [
