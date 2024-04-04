@@ -29,3 +29,17 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+My answer:
+
+This algorithm has two for loops in the beginning to iterate over the graph,
+so one for loop iterates over the rows and the other iterates over columns/each 
+element in the current row. Since the rows and columns are of the length of the graph 
+(adjacency matrix), both for loops run for number of vertices or |V| and because 
+one for loop is nested inside the other, those for loops run for $|V|^2$. Now the three 
+for loops at the end are trying to find the shortest distance between all pairs of vertices,
+so each for loop is iterating over the number of vertices. Since the for loops are nested,
+they run for $|V|^3$, and if we put everything together we get $|V|^2 + |V|^3$, 
+which we can simplify to $|V|^3$ because $|V|^2$ is a lower order term and can be dropped.
+Therefore, our worst-case $\Theta$ complexity is $\Theta(|V|^3)$.
+
